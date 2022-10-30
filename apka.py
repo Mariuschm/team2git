@@ -10,7 +10,22 @@ if wiek.isdigit() == False:
   exit("Wiek musi być liczbą")
 wiek = int(wiek)
 if wiek >= 18:
-  print("Witamy!")
+
+    print("Witamy!")
+
+
+def plec(x):
+    if x == 1:
+        print("Aperol gratis")
+    else:
+        print("Pij i płać")
+
+
+x = int(input("Podaj płeć: kobieta(1), mężczyzna(2), inne(3) "))
+
+plec(x)
+
+
 
 region = NrStrefy()
 
@@ -45,4 +60,5 @@ def pelnoletni(wiek,region):
 
     else:
         print("Podałeś nieprawidłową wartość, wiek musi być z przedziału 1-120")
+
 
